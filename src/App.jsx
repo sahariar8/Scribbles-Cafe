@@ -1,12 +1,15 @@
 
 import './App.css'
+import Blogs from './components/blogs/Blogs'
+import Header from './components/header/Header'
 
 function App() {
 
   return (
     <>
       
-      <h1 className='text-3xl font-bold text-rose-600'>React</h1>
+      <Header />
+      <Blogs />
      
      
     </>
