@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "cover": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
+    "cover": "https://i.ibb.co/cKyjCty7/nasa-Q1p7bh3-SHj8-unsplash.jpg",
     "title": "Dockerizing Your Laravel Project",
     "author": "Michael Chen",
     "author_img": "https://randomuser.me/api/portraits/men/85.jpg",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "cover": "https://images.unsplash.com/photo-1504691342899-cdf7c7f8b925",
+    "cover": "https://i.ibb.co/Vp0yS2Ty/kalen-emsley-Bkci-8qcdv-Q-unsplash.jpg",
     "title": "Design Systems with Tailwind CSS",
     "author": "Alicia Kim",
     "author_img": "https://randomuser.me/api/portraits/women/65.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "cover": "https://images.unsplash.com/photo-1581090700227-1e8f07c6ba16",
+    "cover": "https://i.ibb.co/DHctLpjk/sheng-l-q2d-USl9-S4-Xg-unsplash.jpg",
     "title": "Understanding TypeScript Generics",
     "author": "Daniel Moore",
     "author_img": "https://randomuser.me/api/portraits/men/22.jpg",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "cover": "https://images.unsplash.com/photo-1612831667162-31f990485e45",
+    "cover": "https://i.ibb.co/k6VvY5Dt/lanju-fotografie-ogt-WYSY9-As-unsplash.jpg",
     "title": "A Guide to RESTful API Design",
     "author": "Priya Nair",
     "author_img": "https://randomuser.me/api/portraits/women/12.jpg",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "cover": "https://images.unsplash.com/photo-1612831455546-6fc6c1e1a15c",
+    "cover": "https://i.ibb.co/5gqYgrSm/davisuko-5-E5-N49-RWtb-A-unsplash.jpg",
     "title": "Deploying with GitHub Actions",
     "author": "Tom Becker",
     "author_img": "https://randomuser.me/api/portraits/men/56.jpg",
@@ -81,7 +81,7 @@
   },
   {
     "id": 9,
-    "cover": "https://images.unsplash.com/photo-1537432376769-00a57a5f7cfa",
+    "cover": "https://i.ibb.co/RkL5rvcG/simon-berger-twuk-N12-EN7c-unsplash.jpg",
     "title": "Next.js vs. Remix: A Modern Comparison",
     "author": "Lucas Gray",
     "author_img": "https://randomuser.me/api/portraits/men/88.jpg",
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "cover": "https://images.unsplash.com/photo-1612831667191-4ef4e1f74c4f",
+    "cover": "https://i.ibb.co/cKyjCty7/nasa-Q1p7bh3-SHj8-unsplash.jpg",
     "title": "Improving Web Performance with Lighthouse",
     "author": "Amara Patel",
     "author_img": "https://randomuser.me/api/portraits/women/39.jpg",
