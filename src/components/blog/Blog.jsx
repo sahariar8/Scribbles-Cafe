@@ -2,8 +2,9 @@ import PropTypes from 'prop-types';
 import { CiBookmark } from "react-icons/ci";
 
 
-const Blog = ({blog,handleBookmark,handleReadTime}) => {
+const Blog = ({blog,handleBookmark,handleReadTime,isMarked}) => {
     const { id, cover, title, author_img, author , posted_date ,reading_time,hashtags} = blog;
+   
     const date = new Date(posted_date);
     const formatedDate = date.toLocaleDateString('en-US', {
         year: 'numeric',
@@ -25,7 +26,7 @@ const Blog = ({blog,handleBookmark,handleReadTime}) => {
             </div>
             <div className='flex gap-2'>
                 <p className='text-slate-500 text-sm font-semibold'>0{reading_time} min read</p>
-                <button className='text-slate-500 text-xl font-bold mb-8' onClick={()=>handleBookmark(blog)}><CiBookmark /></button>
+                <button className={`text-xl font-bold mb-8 ${isMarked ? 'text-red-500 ' : 'text-slate-500 '}`} onClick={()=>handleBookmark(blog)}><CiBookmark /></button>
             </div>
         </div>
         <div className='my-2'>
@@ -50,6 +51,7 @@ Blog.propTypes = {
     blog:PropTypes.object.isRequired,
     handleBookmark:PropTypes.func.isRequired,
     handleReadTime:PropTypes.func.isRequired,
+    isMarked:PropTypes.bool.isRequired,
 }
 
 export default Blog

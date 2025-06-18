@@ -9,9 +9,11 @@ function App() {
 
   const [bookmarks, setBookmarks] = useState([])
   const [readTime, setReadTime] = useState(0)
+  const [isMarked, setIsMarked] = useState(false);
 
   const handleBookmark = (blog) => {
     setBookmarks(prev => [...prev, blog])
+    setIsMarked(!isMarked);
   }
 
   const handleReadTime = (reading_time,id) => {
@@ -30,7 +32,7 @@ function App() {
       
       <Header />
       <div className='md:flex gap-4'>
-         <Blogs handleBookmark={handleBookmark} handleReadTime={handleReadTime} />
+         <Blogs handleBookmark={handleBookmark} handleReadTime={handleReadTime} isMarked={isMarked} />
          <Bookmarks bookmarks={bookmarks} readTime={readTime} />
       </div>
      
