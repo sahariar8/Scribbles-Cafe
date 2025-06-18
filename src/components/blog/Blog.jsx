@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import { CiBookmark } from "react-icons/ci";
 
 
-const Blog = ({blog}) => {
-    const { cover, title, author_img, author , posted_date ,reading_time} = blog;
+const Blog = ({blog,handleBookmark,handleReadTime}) => {
+    const { id, cover, title, author_img, author , posted_date ,reading_time,hashtags} = blog;
     const date = new Date(posted_date);
     const formatedDate = date.toLocaleDateString('en-US', {
         year: 'numeric',
@@ -25,15 +25,31 @@ const Blog = ({blog}) => {
             </div>
             <div className='flex gap-2'>
                 <p className='text-slate-500 text-sm font-semibold'>0{reading_time} min read</p>
-                <p className='text-slate-500 text-xl font-bold'><CiBookmark /></p>
+                <button className='text-slate-500 text-xl font-bold mb-8' onClick={()=>handleBookmark(blog)}><CiBookmark /></button>
             </div>
         </div>
+        <div className='my-2'>
+            <h1 className='text-3xl font-bold'>{title}</h1>
+        </div>
+        <div className='my-4'>
+            {
+                hashtags.map((tag, index) => (
+                    <span key={index} className='bg-slate-200 text-slate-500 px-2 py-1 rounded-md text-sm font-semibold mr-2 mb-2'>
+                        {tag}
+                    </span>
+                ))
+            }
+        </div>
+
+         <button className='text-purple-700 text-sm font-semibold underline my-4' onClick={() => handleReadTime(reading_time,id)}>Mark as read</button>
     </div>
   )
 }
 
 Blog.propTypes = {
-    blog:PropTypes.object.isRequired
+    blog:PropTypes.object.isRequired,
+    handleBookmark:PropTypes.func.isRequired,
+    handleReadTime:PropTypes.func.isRequired,
 }
 
 export default Blog
